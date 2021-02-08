@@ -1,1 +1,1 @@
-web:gunicorn Chuck norris:app
+web: gunicorn jokes:app

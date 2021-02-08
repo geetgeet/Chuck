@@ -2,7 +2,7 @@ import requests
 from flask import *
 
 
-app=Flask(__name__)
+app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
@@ -13,8 +13,6 @@ def get_chuck_norris_jokes():
     image="<img src=" + response["icon_url"] +">"
 
     return "<strong>Random joke from chuck norris: </strong>" + response['value'] + image
-
-
 
 
 if __name__=='__main__':
